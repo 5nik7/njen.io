@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  color-scheme: dark;
+  --background: #11141b;
+  --frame: #323844;
+  --muted: #9ca2af;
+  --accent: #ee9a68;
+  --accent-1: #f4d087;
+  --accent-2: #efa16e;
+  --accent-3: #db777f;
+  --accent-4: #aa91cb;
+  --shared-a: #fff;
+  --shared-b: #fff;
+  --extra-a: #909aaa;
+  --extra-b: #7c879a;
+  --content-width: 550px;
+  --mode-inset: 18px;
+  --theme-transition: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: #c7ccd4;
+  --frame: #828b9b;
+  --muted: #4e596b;
+  --accent: #593d85;
+  --accent-1: #29496d;
+  --accent-2: #3e4382;
+  --accent-3: #593d85;
+  --accent-4: #704585;
+  --shared-a: #222b3a;
+  --shared-b: #303b4e;
+  --extra-a: #546176;
+  --extra-b: #59657b;
+}
+
+@media (max-width: 420px) {
+  :root { --mode-inset: 12px; }
+}

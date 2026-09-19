@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  border-radius: 0.08em;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 12px; }
+.stage { position: relative; display: block; white-space: nowrap; }
+.measure { display: block; visibility: hidden; pointer-events: none; }
+.letters { position: absolute; inset: 0; display: flex; align-items: baseline; }
+.anchor { color: var(--text); }
+.insert { display: inline-flex; overflow: hidden; white-space: pre; color: var(--muted); }
+.insert > span { flex: none; }
+.tail { position: relative; display: inline-flex; }
+.suffix { display: inline-block; color: var(--muted); }
+.domain { position: absolute; inset: 0 auto auto 0; color: var(--accent); }

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/inter-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--background); transition: background-color var(--theme-transition); }
+body { margin: 0; min-width: 240px; color: var(--shared-a); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; cursor: pointer; touch-action: manipulation; }
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+svg stop { transition: stop-color var(--theme-transition); }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.landing {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: max(360px, 100svh);
+  padding: 80px 16px;
+  background: var(--background);
+  transition: background-color var(--theme-transition);
+}
+.landing-content {
+  position: relative;
+  width: 100%;
+  max-width: var(--content-width);
+  min-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, .landing, svg stop { transition: none; }
+}

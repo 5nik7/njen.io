@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://njen.io/sitemap.xml
